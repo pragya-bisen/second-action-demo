@@ -1,8 +1,8 @@
 name: Output information
 on: workflow_disptach
-  jobs:
-    info: 
-      runs-on: macos-latest
-      steps: 
-        - name: Output GitHub Context
-          run: echo "${{toJSON(github)}}"
+jobs:
+  info:
+    runs-on: macos-latest
+    steps:
+      - name: Output GitHub Context
+        run: echo "${{toJSON(github)}}"
